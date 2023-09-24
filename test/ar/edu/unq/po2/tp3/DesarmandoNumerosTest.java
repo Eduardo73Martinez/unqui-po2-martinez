@@ -10,13 +10,12 @@ import org.junit.jupiter.api.Test;
 
 class DesarmandoNumerosTest {
 	DesarmandoNumeros desarmador;
-	ArrayList<Integer> array1;
+	ArrayList<Integer> array1=new ArrayList<>();
 
 	@BeforeEach
 	void setUp() {
 		// se crea el contador
 		desarmador = new DesarmandoNumeros();
-		array1 = new ArrayList<>();
 		array1.add(1111);
 		array1.add(222);
 		array1.add(4444444);

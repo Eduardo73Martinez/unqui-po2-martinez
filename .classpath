@@ -4,6 +4,15 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry excluding="src/|test/|.settings/|src/|test/" kind="src" path=""/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/marti/Downloads/objenesis-3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marti/Downloads/mockito-inline-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marti/Downloads/mockito-core-5.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marti/Downloads/byte-buddy-agent-1.14.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/marti/Downloads/byte-buddy-1.14.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
