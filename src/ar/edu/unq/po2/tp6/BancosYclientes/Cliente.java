@@ -5,6 +5,15 @@ public class Cliente {
 	private String apellido;
 	private int edad;
 	private double sueldoNeto;
+	private double cajaParaCredito;
+
+	public double getCajaParaCredito() {
+		return cajaParaCredito;
+	}
+
+	public void setCajaParaCredito(double cajaParaCredito) {
+		this.cajaParaCredito = cajaParaCredito;
+	}
 
 	public double sueldoNetoAnual() {
 		return this.sueldoNeto * 12;

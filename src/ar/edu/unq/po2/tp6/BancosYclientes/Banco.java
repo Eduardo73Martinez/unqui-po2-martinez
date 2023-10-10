@@ -18,4 +18,12 @@ public class Banco {
 		}
 	}
 
+	public void aprobarSolicitudes() {
+		for (Solicitud s : solicitudes) {
+			if (s.solicitudAprobada()) {
+				s.getSolicitante().setCajaParaCredito(s.getMontoSolicitado());
+			}
+		}
+	}
+
 }
