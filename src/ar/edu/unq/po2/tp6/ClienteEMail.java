@@ -41,11 +41,11 @@ public class ClienteEMail {
 	
 	public void recibirNuevos(){
 		this.servidor.recibirNuevos(this.nombreUsuario, this.passusuario);
-	}
+	} // ¿porque les pasa el usuario y la contraseña si es colaborador el servidor?
 	
 	public void enviarCorreo(String asunto, String destinatario, String cuerpo){
 		Correo correo = new Correo(asunto, destinatario, cuerpo);
 		this.servidor.enviar(correo);
-	}
+	} //¿ acá esta violando el single reposibility?, el servidor se encarga de enviar.
 
 }
