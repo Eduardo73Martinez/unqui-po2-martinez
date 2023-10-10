@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp6.BancosYclientes;
 
-public class Cliente {
+public class Cliente implements ICliente{
 	private String nombre;
 	private String apellido;
 	private int edad;
@@ -35,6 +35,7 @@ public class Cliente {
 		return edad;
 	}
 	
+	@Override
 	public void solicitarCredito(Banco b, Solicitud s) {
 		b.agregarSolicitud(this, s);
 	}

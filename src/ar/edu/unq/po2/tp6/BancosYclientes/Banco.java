@@ -25,5 +25,14 @@ public class Banco {
 			}
 		}
 	}
+	public double totalADesembolsar() {
+		double suma =0 ;
+		for (Solicitud s : solicitudes) {
+			if (s.solicitudAprobada()) {
+				suma += s.getMontoSolicitado();
+			}
+		}
+		return suma;
+	}
 
 }
