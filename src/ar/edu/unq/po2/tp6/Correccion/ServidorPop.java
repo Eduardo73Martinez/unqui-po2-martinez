@@ -2,7 +2,7 @@ package ar.edu.unq.po2.tp6.Correccion;
 
 import java.util.List;
 
-public class ServidorPop implements Servidor, ServidorCorreo {
+public class ServidorPop implements Servidor {
 
 	@Override
 	public void enviar(Correo correo) {
