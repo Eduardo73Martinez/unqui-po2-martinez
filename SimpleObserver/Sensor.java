@@ -23,7 +23,8 @@ public class Sensor extends Observable{
 	public void setTempratura(int nuevoValor){
 		this.temperaturaActual=nuevoValor;
 		this.setChanged();
-		this.notifyObservers(); //Forma basica, indica que cambió solamente pero no cual es el elemento particular del cambio
+		this.notifyObservers(); 
+		//Forma basica, indica que cambió solamente pero no cual es el elemento particular del cambio
 		
 	}
 	
